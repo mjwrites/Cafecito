@@ -1,0 +1,60 @@
+公共 类 EnhancedFor
+{
+	公共 静态 无效 main(String[] args)
+	{	整数[] list ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		整数 sum = sumListEnhanced(list);
+		System.out.打印行("Sum of elements in list: " + sum);
+
+		System.out.打印行("Original List");
+		printList(list);
+		System.out.打印行("Calling addOne");
+		addOne(list);
+		System.out.打印行("List after call to addOne");
+		printList(list);
+		System.out.打印行("Calling addOneError");
+		addOneError(list);
+		System.out.打印行("List after call to addOneError. Note elements of list did not change.");
+		printList(list);
+	}
+
+	公共 静态 整数 sumListEnhanced(整数[] list)
+	{	整数 total = 0;
+		对于(整数 val : list)
+		{	total += val;
+		}
+		返回 total;
+	}
+
+	公共 静态 整数 sumListOld(整数[] list)
+	{	整数 total = 0;
+		对于(整数 i = 0; i < list.长度; i++)
+		{	total += list[i];
+			System.out.打印行( list[i] );
+		}
+		返回 total;
+	}
+
+	公共 静态 无效 addOneError(整数[] list)
+	{	对于(整数 val : list)
+		{	val = val + 1;
+		}
+	}
+
+	// pre: list != null
+	// post: adds one to every element of list
+	公共 静态 无效 addOne(整数[] list)
+	{	对于(整数 i = 0; i < list.长度; i++)
+		{	list[i]++;
+		}
+	}
+
+	公共 静态 无效 printList(整数[] list)
+	{	System.out.打印行("index, value");
+		对于(整数 i = 0; i < list.长度; i++)
+		{	System.out.打印行(i + ", " + list[i]);
+		}
+	}
+
+
+
+}
