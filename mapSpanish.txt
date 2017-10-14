@@ -81,40 +81,38 @@ wait = espera
 new = nuevo
 
 
-arraycopy
-exit
-setErr
-setIn
-setOut
-
-append
-checkError
-clearError
-close
-flush
-format
-print 
-println
-write
-
-add
-remove
-toString
-next
-push
-pop
-copyOfRange
-addAll
-contains
-get
-indexOf
-isEmpty
-size 
-length
-set
-peek
-push
-search
+arraycopy = matrizcopia
+exit = salir
+setErr = fijarErr
+setIn = fijarDentro
+setOut = fijarFuera
 
 
+append = adjuntar
+checkError = revisaError
+clearError = aclararError
+close = cerrar
+flush = nivelar
+format = formato
+print = imprimir
+println = imprimirDentro
+write = escribir
 
+
+add = sumar
+remove = retirar
+toString = aCuerda
+next = proximo
+push = empujar
+pop = tap (taponazo)
+copyOfRange = copiarDeIntervalo
+addAll = sumarTodo
+contains = contiene
+get = obten
+indexOf = indiceDe
+isEmpty = esVacio
+size  = tamano
+length = longitud
+set = fijar
+peek = ojear
+search = buscar
