@@ -22,6 +22,17 @@ public class Transpiler {
             "transient", "try", "void", "volatile", "while", null, null, 
             null, null, null, "null"
         };
+
+    private static final String[] ENGLISH_METHODS = {
+        null, "clone", "equals", "finalize", "getClass", "hashCode", "notify",
+        "notifyAll", "toString", "wait", "new", "arraycopy", "exit", 
+        "setErr", "setIn", "setOut", "append", "checkError", "clearError",
+        "close", "flush", "format", "print", "println", "write", "add", "remove",
+        "next", "push", "pop", "copyOfrange", "addAll", "contains", "get", "indexOf",
+        "isEmpty", "size", "length", "set", "peek", "search"
+    };
+
+
     
     public static void main(String[] args) throws Exception {
         CharStream s = new ANTLRFileStream(args[0] + ".cafe");
@@ -50,5 +61,7 @@ public class Transpiler {
         BufferedWriter writer = new BufferedWriter(new FileWriter(args[0] + ".java"));
         writer.write(new Formatter().formatSource(output.toString()));
         writer.close();
+
+        
     }
 }

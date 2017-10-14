@@ -48,4 +48,81 @@ try=tratar
 void=vacio
 volatile=volatil
 while=mientras
+
 null=nulo
+see = ver
+serial = 
+since = desde
+throws = lanza
+version = version (no accent)
+
+author = autor
+deprecated = depreciado
+exception = excepcion
+link = enlace
+param (parameter) = param (parametero) 
+return = devlover
+
+Object = objeto
+PrintStream = ImprimeCorriente
+OutputStream = SalidaCorriente
+InputStream = EntradaCorriente
+
+clone = clon
+equals = igual
+finalize = finalizar
+getClass = obtenClase
+hashCode = hashCodigo
+
+notify = notifica
+notifyAll = notificaTodos
+toString = aCuerda
+wait = espera
+new = nuevo
+
+
+arraycopy = matrizcopia
+exit = salir
+setErr = fijarErr
+setIn = fijarDentro
+setOut = fijarFuera
+
+
+append = adjuntar
+checkError = revisaError
+clearError = aclararError
+close = cerrar
+flush = nivelar
+format = formato
+print = imprimir
+println = imprimirDentro
+write = escribir
+
+
+add = sumar
+remove = retirar
+toString = aCuerda
+next = proximo
+push = empujar
+pop = tap (taponazo)
+copyOfRange = copiarDeIntervalo
+addAll = sumarTodo
+contains = contiene
+get = obten
+indexOf = indiceDe
+isEmpty = esVacio
+size  = tamano
+length = longitud
+set = fijar
+peek = ojear
+search = buscar
+
+
+    private static final String[] ENGLISH_METHODS = {
+        null, "clone", "equals", "finalize", "getClass", "hashCode", "notify",
+        "notifyAll", "toString", "wait", "new", "arraycopy", "exit", 
+        "setErr", "setIn", "setOut", "append", "checkError", "clearError",
+        "close", "flush", "format", "print", "println", "write", "add", "remove",
+        "next", "push", "pop", "copyOfrange", "addAll", "contains", "get", "indexOf",
+        "isEmpty", "size", "length", "set", "peek", "search"
+    };
