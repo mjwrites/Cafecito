@@ -9,8 +9,7 @@ import java.nio.file.Paths;
 import org.antlr.v4.Tool;
 
 public class LexerMaker {
-    public static void main(String[] argz) throws IOException {
-        String[] args = new String[] {"spanish"};
+    public static void main(String[] args) throws IOException {
         BufferedReader r = new BufferedReader(new FileReader(args[0] + ".txt"));
         Path path = Paths.get("Java8.g4");
         Charset charset = StandardCharsets.UTF_8;
