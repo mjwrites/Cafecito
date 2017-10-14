@@ -41,11 +41,13 @@ public class Transpiler {
     	Map<String, String> methodMap = new TreeMap<String, String>();
     	BufferedReader r = new BufferedReader(new FileReader(args[1] + ".txt"));
 
-        for (int i = 53; i < 107; i++) {
-            String line = r.readLine();
-            int divInd = line.indexOf('=');
-            methodMap.put("'" + line.substring(divInd + 1) + "'",
-                          "'" + line.substring(0, divInd) + "'");
+        for (int i = 1; i < 107; i++) {
+        	String line = r.readLine();
+        	if (52 < i) {
+        		int divInd = line.indexOf('=');
+                methodMap.put(line.substring(divInd + 1),
+                              line.substring(0, divInd));
+        	}
         }
 	
         CharStream s = new ANTLRFileStream(args[0] + ".cafe");
