@@ -33,35 +33,7 @@ public class Translator {
         "isEmpty", "size", "length", "set", "peek", "search"
     };
 
-@Override public void enterMethodDeclaration(Java7Parser.MethodDeclarationContext ctx) {
-    TerminalNode identifier = ctx.Identifier();
-    if (identifier!=null) {
-        for (String name:methodNamesToMatch) {
-        if (identifier.getText().equals(name)) {
-            int a = ctx.start.getStartIndex();
-            int b = ctx.stop.getStopIndex();
-            Interval interval = new Interval(a,b);
-            intervals.add(interval);
-        }
-        }
-    }
-    }
 
-    private void writeOutputFile() {
-    File outFile = new File(this.outputDir, this.currentJavaFile.getName());
-    try {
-        FileWriter fw = new FileWriter(outFile);
-        for (Interval interval:this.intervals) {
-        fw.write(input.getText(interval));
-        fw.write("\n\n");
-        }
-        fw.close();
-    } catch (Exception e) {
-        System.err.println("Could not write output file " + outFile);
-        e.printStackTrace();
-        }
-    }
-  
     
     public static void main(String[] args) throws IOException, FormatterException {
         CharStream s = new ANTLRFileStream(args[0] + ".cafe");
