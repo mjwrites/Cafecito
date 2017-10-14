@@ -3,13 +3,13 @@ publico clase test {
     cara[] Array8 = nuevo cara[5];
 
     para (ent i = 0; i < Array8.length;i++ ) {
-        si (Array6[i] >= 90)
+        si (Array8[i] >= 90)
             Array8[i] = 'A';
-        entonces si (Array6[i] >= 80)
+        entonces si (Array8[i] >= 80)
             Array8[i] = 'B';
-        entonces si (Array6[i] >= 70)
+        entonces si (Array8[i] >= 70)
             Array8[i] = 'C';
-        entonces si (Array6[i] >= 60)
+        entonces si (Array8[i] >= 60)
             Array8[i] = 'D';
         entonces
             Array8[i] = 'F';
