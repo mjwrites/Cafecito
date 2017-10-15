@@ -1,0 +1,35 @@
+importar java.util.*;
+
+publico classe portugueseTest {
+  publico estatico vazio main(String[] args) lances Exception {
+    
+    carater val = '!';
+    duplo newVar;
+    duplo[] arr = novo duplo[10];
+    se (val < 100) {
+      newVar = 5.0;
+    } outro se (val == 100) {
+      newVar = 3.5;
+    } outro {
+      newVar = 0;
+    }
+
+    // this is a loop in a loop
+    para (inteiro i = 0; i < arr.comprimento; i++) {
+      inteiro j = 0;
+      enquanto (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      se (i == 7) {
+        pausa;
+      }
+    }
+
+    boleano testVal = (1 == 1);
+    se (nulo != nulo) {
+      System.out.impressaoln(arr);
+    }
+
+  }
+}

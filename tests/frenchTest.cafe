@@ -1,0 +1,34 @@
+importer java.util.*;
+
+publique classe frenchTest {
+  publique statique vide main(String[] args) jette Exception {
+    
+    char val = '!';
+    double newVar;
+    double[] arr = nouveau double[10];
+    si (val < 100) {
+      newVar = 5.0;
+    } sinon si (val == 100) {
+      newVar = 3.5;
+    } sinon {
+      newVar = 0;
+    }
+
+    pour (int i = 0; i < arr.longuer; i++) {
+      int j = 0;
+      pendtque (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      si (i == 7) {
+        casser;
+      }
+    }
+
+    booleen testVal = (1 == 1);
+    if (null != null) {
+      System.out.imprimerln(arr);
+    }
+
+  }
+}

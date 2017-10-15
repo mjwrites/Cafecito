@@ -1,0 +1,35 @@
+임포트 java.util.*;
+
+퍼블릭 클래스 koreanTest {
+  퍼블릭 스태틱 보이드 main(String[] args) 쓰로우즈 Exception {
+    
+    캐릭터 val = '!';
+    더블 newVar;
+    더블[] arr = 뉴 더블[10];
+    이프 (val < 100) {
+      newVar = 5.0;
+    } 아니면 이프 (val == 100) {
+      newVar = 3.5;
+    } 아니면 {
+      newVar = 0;
+    }
+
+    // this is a loop in a loop
+    포 (인트 i = 0; i < arr.길이; i++) {
+      인트 j = 0;
+      와일 (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      이프 (i == 7) {
+        스톱;
+      }
+    }
+
+    부울 testVal = (1 == 1);
+    이프 (널 != 널) {
+      System.out.줄을인쇄하다(arr);
+    }
+
+  }
+}

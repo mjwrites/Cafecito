@@ -793,15 +793,15 @@ statementExpression
 	;
 
 ifThenStatement
-	:	'si' '(' expression ')' statement
+	:	'if' '(' expression ')' statement
 	;
 
 ifThenElseStatement
-	:	'si' '(' expression ')' statementNoShortIf 'else' statement
+	:	'if' '(' expression ')' statementNoShortIf 'else' statement
 	;
 
 ifThenElseStatementNoShortIf
-	:	'si' '(' expression ')' statementNoShortIf 'else' statementNoShortIf
+	:	'if' '(' expression ')' statementNoShortIf 'else' statementNoShortIf
 	;
 
 assertStatement
@@ -1366,7 +1366,7 @@ FINAL : 'final';
 FINALLY : 'finally';
 FLOAT : 'float';
 FOR : 'for';
-IF : 'si';
+IF : 'if';
 GOTO : 'goto';
 IMPLEMENTS : 'implements';
 IMPORT : 'import';

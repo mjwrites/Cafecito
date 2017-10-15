@@ -1,0 +1,35 @@
+进口 java.util.*;
+
+公共 类 mandarinTest {
+  公共 静态 void main(String[] args) 抛出 Exception {
+    
+    焦炭 val = '!';
+    双 newVar;
+    双[] arr = 新 双[10];
+    如果 (val < 100) {
+      newVar = 5.0;
+    } 否则 如果 (val == 100) {
+      newVar = 3.5;
+    } 否则 {
+      newVar = 0;
+    }
+
+    // this is a loop in a loop
+    对于 (整数 i = 0; i < arr.长度; i++) {
+      整数 j = 0;
+      同时 (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      如果 (i == 7) {
+        打破;
+      }
+    }
+
+    布尔 testVal = (1 == 1);
+    如果 (空 != 空) {
+      System.out.打印行(arr);
+    }
+
+  }
+}
