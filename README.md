@@ -16,22 +16,52 @@ You will need to install your preferred text editor.
 * [Atom](https://atom.io/) - Github's open source text editor.
 * [VS Code](https://code.visualstudio.com/) - Microsoft's streamlined code editor.
 
+## Language Support
+- French
+- Italian
+- Korean
+- Mandarin
+- Polish
+- Portuguese
+- Russian
+- Spanish
 
 ## Examples
 
-`if` statements:
-
 English:
 ```
-if(Object == true)
-{
-  System.out.print("Litty");
-}
+if(Object) { System.out.print("Litty"); }
+```
+
+French:
+```
+si(Object) { System.out.imprimer("Litty"); }
+```
+Italian:
+```
+se(Oggetto) { System.out.stampare("Litty"); }
+```
+Korean:
+```
+이프(목적) { System.out.나오다("Litty"); }
+```
+Mandarin:
+```
+如果(对象) { System.out.打印("Litty"); }
+```
+Polish:
+```
+gdyby(Obiekt) { System.out.wydrukowac("Litty"); }
+```
+Portuguese:
+```
+se(Objetivo) { System.out.impressao("Litty"); }
+```
+Russian:
+```
+если(Объект) { System.out.Принт("Litty"); }
 ```
 Spanish:
 ```
-si(Objeto == verdad)
-{
-  Sistema.fuera.imprime("Litty");
-}
+si(Objeto) { System.out.imprimir("Litty"); }
 ```
