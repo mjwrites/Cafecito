@@ -1,7 +1,8 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -39,7 +40,9 @@ public class Transpiler {
      */
     public static void main(String[] args) throws Exception {
     	Map<String, String> methodMap = new TreeMap<String, String>();
-    	BufferedReader r = new BufferedReader(new FileReader(args[0] + ".txt"));
+    	ClassLoader.getSystemClassLoader();
+        InputStream inputStream = ClassLoader.getSystemResourceAsStream("resources/" + args[0] + ".txt");
+    	BufferedReader r = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
         @SuppressWarnings("unchecked")
         Class<? extends Lexer> c = (Class<? extends Lexer>) Class.forName(args[0] + "Lexer");
         
