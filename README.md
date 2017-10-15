@@ -14,6 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 You will need to install your preferred text editor.
 <br>*Cafecito is optimized for Atom and VS Code*</br>
 * [Atom](https://atom.io/) - Github's open source text editor.
+* [Cafecito Atom Package](https://github.com/ndneighbor/cafecito-atom) - The language pack that allows syntax highlighting and IDE like transpiler running
 * [VS Code](https://code.visualstudio.com/) - Microsoft's streamlined code editor.
 
 ## Language Support
