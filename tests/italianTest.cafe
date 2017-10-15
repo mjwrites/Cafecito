@@ -1,0 +1,35 @@
+import java.util.*;
+
+pubblico categ italianTest {
+  pubblico statico vuoto main(String[] args) getta Exception {
+    
+    grafia val = '!';
+    sosia newVar;
+    sosia[] arr = nuovo sosia[10];
+    se (val < 100) {
+      newVar = 5.0;
+    } altro se (val == 100) {
+      newVar = 3.5;
+    } altro {
+      newVar = 0;
+    }
+
+    // this is a loop in a loop
+    per (int i = 0; i < arr.lunghezza; i++) {
+      int j = 0;
+      mentre (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      se (i == 7) {
+        rompere;
+      }
+    }
+
+    booleano testVal = (1 == 1);
+    se (nullo != nullo) {
+      System.out.stampareRiga(arr);
+    }
+
+  }
+}

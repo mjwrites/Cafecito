@@ -1,0 +1,35 @@
+importar java.util.*;
+
+publico clase spanishTest {
+  publico estatico vacio main(String[] args) lanza Exception {
+    
+    cara val = '!';
+    doble newVar;
+    doble[] arr = nuevo doble[10];
+    si (val < 100) {
+      newVar = 5.0;
+    } entonces si (val == 100) {
+      newVar = 3.5;
+    } entonces {
+      newVar = 0;
+    }
+
+    // this is a loop in a loop
+    para (ent i = 0; i < arr.longitud; i++) {
+      ent j = 0;
+      mientras (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      si (i == 7) {
+        inter;
+      }
+    }
+
+    booleano testVal = (1 == 1);
+    si (nulo != nulo) {
+      System.out.imprimirDentro(arr);
+    }
+
+  }
+}
