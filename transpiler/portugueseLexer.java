@@ -74,7 +74,7 @@ public class portugueseLexer extends Lexer {
 		null, "'abstrato'", "'afirmar'", "'boleano'", "'pausa'", "'byte'", "'caso'", 
 		"'captura'", "'carater'", "'classe'", "'constante'", "'continuar'", "'revelia'", 
 		"'faz'", "'duplo'", "'outro'", "'enumerar'", "'estender'", "'final'", 
-		"'finalmente'", "'flutuar'", "'para'", "'si'", "'ira'", "'implementa'", 
+		"'finalmente'", "'flutuar'", "'para'", "'se'", "'ira'", "'implementa'", 
 		"'importar'", "'instanciade'", "'inteiro'", "'interface'", "'longo'", 
 		"'nativo'", "'novo'", "'pacote'", "'privado'", "'protegido'", "'publico'", 
 		"'retorna'", "'curto'", "'estatico'", "'estritofp'", "'super'", "'desvio'", 
@@ -386,7 +386,7 @@ public class portugueseLexer extends Lexer {
 		"\u01c8\7v\2\2\u01c8\u01c9\7w\2\2\u01c9\u01ca\7c\2\2\u01ca\u01cb\7t\2\2"+
 		"\u01cb*\3\2\2\2\u01cc\u01cd\7r\2\2\u01cd\u01ce\7c\2\2\u01ce\u01cf\7t\2"+
 		"\2\u01cf\u01d0\7c\2\2\u01d0,\3\2\2\2\u01d1\u01d2\7u\2\2\u01d2\u01d3\7"+
-		"k\2\2\u01d3.\3\2\2\2\u01d4\u01d5\7k\2\2\u01d5\u01d6\7t\2\2\u01d6\u01d7"+
+		"g\2\2\u01d3.\3\2\2\2\u01d4\u01d5\7k\2\2\u01d5\u01d6\7t\2\2\u01d6\u01d7"+
 		"\7c\2\2\u01d7\60\3\2\2\2\u01d8\u01d9\7k\2\2\u01d9\u01da\7o\2\2\u01da\u01db"+
 		"\7r\2\2\u01db\u01dc\7n\2\2\u01dc\u01dd\7g\2\2\u01dd\u01de\7o\2\2\u01de"+
 		"\u01df\7g\2\2\u01df\u01e0\7p\2\2\u01e0\u01e1\7v\2\2\u01e1\u01e2\7c\2\2"+

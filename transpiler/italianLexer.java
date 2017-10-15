@@ -74,7 +74,7 @@ public class italianLexer extends Lexer {
 		null, "'astratto'", "'affermare'", "'booleano'", "'rompere'", "'byte'", 
 		"'caso'", "'cattur'", "'grafia'", "'categ'", "'const'", "'continua'", 
 		"'predefin'", "'fare'", "'sosia'", "'altro'", "'enum'", "'estende'", "'finale'", 
-		"'finalmente'", "'decimale'", "'per'", "'si'", "'vaia'", "'realizzare'", 
+		"'finalmente'", "'decimale'", "'per'", "'se'", "'vaia'", "'realizzare'", 
 		"'import'", "'esempiodi'", "'int'", "'interfaccia'", "'lungo'", "'nativo'", 
 		"'nuovo'", "'pacchetto'", "'privato'", "'protetta'", "'pubblico'", "'ritorno'", 
 		"'corto'", "'statico'", "'rigorosopg'", "'super'", "'passare'", "'sincronizzato'", 
@@ -383,7 +383,7 @@ public class italianLexer extends Lexer {
 		"\u01c0\7f\2\2\u01c0\u01c1\7g\2\2\u01c1\u01c2\7e\2\2\u01c2\u01c3\7k\2\2"+
 		"\u01c3\u01c4\7o\2\2\u01c4\u01c5\7c\2\2\u01c5\u01c6\7n\2\2\u01c6\u01c7"+
 		"\7g\2\2\u01c7*\3\2\2\2\u01c8\u01c9\7r\2\2\u01c9\u01ca\7g\2\2\u01ca\u01cb"+
-		"\7t\2\2\u01cb,\3\2\2\2\u01cc\u01cd\7u\2\2\u01cd\u01ce\7k\2\2\u01ce.\3"+
+		"\7t\2\2\u01cb,\3\2\2\2\u01cc\u01cd\7u\2\2\u01cd\u01ce\7g\2\2\u01ce.\3"+
 		"\2\2\2\u01cf\u01d0\7x\2\2\u01d0\u01d1\7c\2\2\u01d1\u01d2\7k\2\2\u01d2"+
 		"\u01d3\7c\2\2\u01d3\60\3\2\2\2\u01d4\u01d5\7t\2\2\u01d5\u01d6\7g\2\2\u01d6"+
 		"\u01d7\7c\2\2\u01d7\u01d8\7n\2\2\u01d8\u01d9\7k\2\2\u01d9\u01da\7|\2\2"+

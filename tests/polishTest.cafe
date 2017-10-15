@@ -1,0 +1,35 @@
+import java.util.*;
+
+publiczny klasa polishTest {
+  publiczny statyczny pustka main(String[] args) rzuca Exception {
+    
+    litera val = '!';
+    podwojnie newVar;
+    podwojnie[] arr = nowy podwojnie[10];
+    gdyby (val < 100) {
+      newVar = 5.0;
+    } jeszcze gdyby (val == 100) {
+      newVar = 3.5;
+    } jeszcze {
+      newVar = 0;
+    }
+
+    // this is a loop in a loop
+    dla (calosc i = 0; i < arr.dlugosc; i++) {
+      calosc j = 0;
+      podczas (j < i) {
+        arr[i] += newVar;
+        j++;
+      }
+      gdyby (i == 7) {
+        przerwa;
+      }
+    }
+
+    boolean testVal = (1 == 1);
+    gdyby (nul != nul) {
+      System.out.wydrukujLn(arr);
+    }
+
+  }
+}
