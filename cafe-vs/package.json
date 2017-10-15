@@ -1,0 +1,26 @@
+{
+    "name": "cafecito-vscode",
+    "displayName": "cafecito-vscode",
+    "description": "cafe support in vscode",
+    "version": "0.0.1",
+    "publisher": "neighborcodes",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cafe",
+            "aliases": ["Cafecito", "cafe"],
+            "extensions": [".cafe",".java"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cafe",
+            "scopeName": "source.java",
+            "path": "./syntaxes/cafe.tmLanguage.json"
+        }]
+    }
+}
