@@ -17,6 +17,13 @@ You will need to install your preferred text editor.
 * [Cafecito Atom Package](https://github.com/ndneighbor/cafecito-atom) - The language pack that allows syntax highlighting and IDE like transpiler running
 * [VS Code](https://code.visualstudio.com/) - Microsoft's streamlined code editor.
 
+### Transpiling your Project
+Full IDE support with syntax highlighting and code completion is currently only supported for select languages, but all languages can be transpiled with minimal effort. Simply create a file with the `.cafe` extension, and run the following:
+```
+java -jar Transpiler.jar language file_1 file_2 file_3
+```
+`language` is the name of the language the original file is written in, and the `file_1 file_2 file_3` represents a list of `.cafe` files of variable length (note: do not include the file extension). This will produce `.java` files in the same location on your computer with equivalent file names as the originals, which can be compiled and run as normal Java files!
+
 ## Language Support
 - French
 - German
@@ -28,7 +35,14 @@ You will need to install your preferred text editor.
 - Russian
 - Spanish
 
-## Examples
+### Adding a Language
+Refer to blank.txt in the langs folder. Fill in your own copy with the appropriate translations (see other files for examples), then from command line, run the following, where `language` is the name of the language:
+```
+java -jar LexerMaker.jar language
+```
+This will produce multiple files. The only file we are interested in is `languageLexer.java`. Add this file to the transpiler folder and the txt file to the langs folder. When your pull request is made, our team will rebuild `Transpiler.jar` to support your langauge!
+
+## Select Examples
 
 English:
 ```
@@ -39,14 +53,6 @@ French:
 ```
 si(Object) { System.out.imprimer("Litty"); }
 ```
-Italian:
-```
-se(Oggetto) { System.out.stampare("Litty"); }
-```
-Korean:
-```
-이프(목적) { System.out.나오다("Litty"); }
-```
 Mandarin:
 ```
 如果(对象) { System.out.打印("Litty"); }
@@ -54,10 +60,6 @@ Mandarin:
 Polish:
 ```
 gdyby(Obiekt) { System.out.wydrukowac("Litty"); }
-```
-Portuguese:
-```
-se(Objetivo) { System.out.impressao("Litty"); }
 ```
 Russian:
 ```
