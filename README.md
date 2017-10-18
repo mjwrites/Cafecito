@@ -19,6 +19,7 @@ You will need to install your preferred text editor.
 
 ## Language Support
 - French
+- German
 - Italian
 - Korean
 - Mandarin
