@@ -104,3 +104,37 @@ toString=aCuerda
 version=version
 wait=espera
 write=escribir
+
+string = cuerda
+
+abs = abs
+max = max
+min = min
+sin = sen
+cos = cos
+tan = tan
+toRadians = aRadian
+toDegrees = aGrados
+exp = exp
+pow = pod (power = poder)
+round = redondo
+random = aleatorio
+sqrt = sqrt
+E = E
+PI = PI
+
+isEmpty = esVacio
+readInt = leeEnt
+readDouble = leeDoble
+readBoolean = leeBooleano
+readString = leeCuerda
+hasNextChar = tieneProximoCara
+readChar = leeCara
+hasNextLine = tieneProximoLinea
+readLine = leeLinea
+readAllInts = leeTodoEnts
+readAllDoubles = leeTodoDobles
+readAllBooleans = leeTodoBooleanos
+readAllStrings = leeTodoCuerdas
+readAllLines = leeTodoLineas
+readAll = leeTodo
